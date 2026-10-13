@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.6 Business Ethics – Complete Self-Graded Worksheet</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+        }
+        body {
+            background: #f5f7fb;
+            margin: 0;
+            padding: 2rem 1.5rem;
+            display: flex;
+            justify-content: center;
+        }
+        .worksheet {
+            max-width: 1000px;
+            width: 100%;
+            background: white;
+            border-radius: 28px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 2rem 2.2rem 2.5rem;
+        }
+
+        /* ---- Score Banner at Top ---- */
+        .score-banner {
+            background: #1e2b4f;
+            color: white;
+            border-radius: 20px;
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.8rem;
+        }
+        .score-banner .label {
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 0.01em;
+        }
+        .score-banner .score {
+            background: #facc15;
+            color: #1e2b4f;
+            padding: 0.4rem 1.4rem;
+            border-radius: 60px;
+            font-weight: 700;
+            font-size: 1.4rem;
+            letter-spacing: 0.02em;
+        }
+        .score-banner .detail {
+            font-size: 0.9rem;
+            opacity: 0.85;
+        }
+
+        h1 {
+            font-size: 1.9rem;
+            margin: 0 0 0.25rem;
+            color: #1e2b4f;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+        .subhead {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #e4e9f2;
+            padding-bottom: 0.85rem;
+            margin-bottom: 1.8rem;
+            color: #5e6f8d;
+            font-size: 0.95rem;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+        .student-info {
+            display: flex;
+            gap: 1.5rem;
+            background: #f0f4fe;
+            padding: 0.8rem 1.4rem;
+            border-radius: 100px;
+            font-weight: 500;
+            flex-wrap: wrap;
+        }
+        .student-info span {
+            color: #1e3a8a;
+        }
+        .student-info input {
+            border: none;
+            background: transparent;
+            border-bottom: 1.5px dashed #b7c3db;
+            font-size: 0.95rem;
+            padding: 0.2rem 0.3rem;
+            width: 140px;
+            outline: none;
+            font-weight: 500;
+            color: #0b1c3f;
+        }
+        .student-info input:focus {
+            border-bottom-color: #2563eb;
+        }
+
+        section {
+            margin-bottom: 2.2rem;
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 1.4rem 1.6rem 1.8rem;
+            border: 1px solid #e2e8f2;
+        }
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1e2b4f;
+            margin: 0 0 1.2rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+        h2 i {
+            font-style: normal;
+            background: #2563eb;
+            color: white;
+            width: 28px;
+            height: 28px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #1e3a8a;
+            margin: 1.2rem 0 0.6rem;
+        }
+
+        /* ---- Fill-in-the-blank boxes ---- */
+        .fill-box {
+            background: #f9fbfe;
+            border-radius: 14px;
+            padding: 1.1rem 1.4rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid #2563eb;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: #1f2a44;
+        }
+        .fill-box input[type="text"] {
+            display: inline-block;
+            width: 140px;
+            padding: 0.2rem 0.5rem;
+            border: none;
+            border-bottom: 2px solid #2563eb;
+            background: transparent;
+            font-size: 0.95rem;
+            font-family: inherit;
+            outline: none;
+            text-align: center;
+            font-weight: 500;
+            color: #0b1c3f;
+            transition: 0.15s;
+        }
+        .fill-box input[type="text"]:focus {
+            border-bottom-color: #facc15;
+            background: #fef9e7;
+        }
+        .fill-box input[type="text"].correct {
+            border-bottom-color: #2e7d32;
+            background: #e8f5e9;
+        }
+        .fill-box input[type="text"].incorrect {
+            border-bottom-color: #c62828;
+            background: #ffeaea;
+        }
+
+        /* ---- Multiple choice ---- */
+        .mcq {
+            background: #f9fbfe;
+            border-radius: 14px;
+            padding: 1rem 1.4rem;
+            margin-bottom: 1rem;
+            border: 1px solid #e6edf6;
+        }
+        .mcq .question {
+            font-weight: 600;
+            color: #1e2b4f;
+            margin-bottom: 0.6rem;
+            font-size: 0.95rem;
+        }
+        .mcq .options {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+        .mcq .options label {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0.45rem 0.8rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.1s;
+            font-size: 0.9rem;
+            background: white;
+            border: 1px solid #e2e9f3;
+        }
+        .mcq .options label:hover {
+            background: #eef3fd;
+            border-color: #c7d7f0;
+        }
+        .mcq .options input[type="radio"] {
+            accent-color: #2563eb;
+            width: 1rem;
+            height: 1rem;
+            margin: 0;
+            flex-shrink: 0;
+        }
+        .mcq .feedback {
+            margin-top: 0.5rem;
+            font-size: 0.88rem;
+            font-weight: 500;
+            min-height: 1.3rem;
+        }
+
+        /* ---- Red flag table ---- */
+        .red-flag-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0.8rem 0 1rem;
+            font-size: 0.88rem;
+        }
+        .red-flag-table th {
+            background: #1e2b4f;
+            color: white;
+            padding: 0.6rem 0.7rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.82rem;
+        }
+        .red-flag-table td {
+            padding: 0.5rem 0.7rem;
+            border-bottom: 1px solid #e4e9f2;
+            vertical-align: middle;
+        }
+        .red-flag-table tr:nth-child(even) {
+            background: #f9fbfe;
+        }
+        .red-flag-table select {
+            padding: 0.3rem 0.5rem;
+            border-radius: 6px;
+            border: 1.5px solid #cdd9ec;
+            font-size: 0.82rem;
+            background: white;
+            outline: none;
+            cursor: pointer;
+            min-width: 100px;
+        }
+        .red-flag-table select:focus {
+            border-color: #2563eb;
+        }
+        .red-flag-table select.correct {
+            border-color: #2e7d32;
+            background: #e8f5e9;
+        }
+        .red-flag-table select.incorrect {
+            border-color: #c62828;
+            background: #ffeaea;
+        }
+
+        /* ---- Stakeholder table ---- */
+        .stakeholder-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0.8rem 0 1rem;
+            font-size: 0.88rem;
+        }
+        .stakeholder-table th {
+            background: #1e2b4f;
+            color: white;
+            padding: 0.6rem 0.8rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.82rem;
+        }
+        .stakeholder-table td {
+            padding: 0.5rem 0.8rem;
+            border-bottom: 1px solid #e4e9f2;
+            vertical-align: middle;
+        }
+        .stakeholder-table tr:nth-child(even) {
+            background: #f9fbfe;
+        }
+        .stakeholder-table select {
+            padding: 0.3rem 0.6rem;
+            border-radius: 8px;
+            border: 1.5px solid #cdd9ec;
+            font-size: 0.82rem;
+            background: white;
+            outline: none;
+            cursor: pointer;
+        }
+        .stakeholder-table select:focus {
+            border-color: #2563eb;
+        }
+        .stakeholder-table select.correct {
+            border-color: #2e7d32;
+            background: #e8f5e9;
+        }
+        .stakeholder-table select.incorrect {
+            border-color: #c62828;
+            background: #ffeaea;
+        }
+
+        /* ---- Buttons ---- */
+        .btn {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 0.7rem 1.6rem;
+            border-radius: 40px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.15s;
+            margin-top: 1rem;
+            letter-spacing: 0.01em;
+        }
+        .btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+        }
+        .btn:active {
+            transform: translateY(1px);
+        }
+        .btn-secondary {
+            background: #1e2b4f;
+        }
+        .btn-secondary:hover {
+            background: #0f1a33;
+        }
+
+        .feedback {
+            margin-top: 1rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+            min-height: 1.5rem;
+        }
+        .success-msg {
+            color: #2e7d32;
+            font-weight: 500;
+        }
+        .error-msg {
+            color: #c62828;
+            font-weight: 500;
+        }
+
+        /* ---- Open response ---- */
+        .open-textarea {
+            width: 100%;
+            padding: 1rem 1.2rem;
+            border-radius: 14px;
+            border: 1.5px solid #dbe3f0;
+            font-size: 0.95rem;
+            font-family: inherit;
+            resize: vertical;
+            min-height: 80px;
+            outline: none;
+            transition: 0.15s;
+            margin-top: 0.5rem;
+        }
+        .open-textarea:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        .scenario-box {
+            background: #f9fbfe;
+            border-radius: 14px;
+            padding: 1.2rem 1.4rem;
+            margin-bottom: 1.2rem;
+            border-left: 4px solid #2563eb;
+        }
+        .scenario-box p {
+            margin: 0 0 0.7rem;
+            color: #2d3a5e;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        .scenario-box ul {
+            margin: 0.4rem 0 0.8rem;
+            padding-left: 1.5rem;
+            color: #2d3a5e;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        .scenario-box li {
+            margin-bottom: 0.4rem;
+        }
+
+        /* ---- Model Answer Box ---- */
+        .model-answer {
+            display: none;
+            background: #e8f5e9;
+            border-radius: 14px;
+            padding: 1rem 1.4rem;
+            margin-top: 0.8rem;
+            border-left: 4px solid #2e7d32;
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: #1b5e20;
+        }
+        .model-answer.show {
+            display: block;
+        }
+        .model-answer strong {
+            color: #0d3b0d;
+        }
+
+        .keyword-feedback {
+            margin-top: 0.5rem;
+            font-size: 0.88rem;
+            font-weight: 500;
+        }
+
+        .footer-note {
+            text-align: center;
+            margin-top: 1.8rem;
+            font-size: 0.85rem;
+            color: #8b9ab5;
+            border-top: 1px solid #e4e9f2;
+            padding-top: 1.2rem;
+        }
+
+        .small-hint {
+            color: #7c8aa5;
+            font-size: 0.85rem;
+            margin-top: 0.3rem;
+        }
+
+        @media (max-width: 700px) {
+            .worksheet { padding: 1.2rem; }
+            .student-info { flex-wrap: wrap; gap: 0.6rem; }
+            .fill-box input[type="text"] { width: 100px; }
+            .red-flag-table { font-size: 0.78rem; }
+            .red-flag-table th, .red-flag-table td { padding: 0.3rem 0.4rem; }
+            .stakeholder-table { font-size: 0.78rem; }
+            .stakeholder-table th, .stakeholder-table td { padding: 0.3rem 0.4rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="worksheet" id="worksheet">
+
+    <!-- ============================================ -->
+    <!-- SCORE BANNER AT TOP                         -->
+    <!-- ============================================ -->
+    <div class="score-banner">
+        <div>
+            <div class="label">📊 Self-Graded Score</div>
+            <div class="detail">Fill in the blanks, MCQs, red flags, and I/E labels. FRQs are keyword-graded for partial credit.</div>
+        </div>
+        <div class="score" id="topScoreDisplay">0 / 56</div>
+    </div>
+
+    <!-- Header -->
+    <h1>1.6: Business Ethics</h1>
+    <div class="subhead">
+        <div class="student-info">
+            <span>Name:</span> <input type="text" id="studentName" placeholder="First Last" />
+            <span>Date:</span> <input type="text" id="studentDate" placeholder="MM/DD/YYYY" />
+            <span>Period:</span> <input type="text" id="studentPeriod" placeholder="e.g., 3" style="width:60px;" />
+        </div>
+        <div>AP Business & Personal Finance</div>
+    </div>
+
+    <!-- Learning Objectives -->
+    <div style="background: #eef3fd; border-radius: 14px; padding: 0.9rem 1.4rem; margin-bottom: 1.8rem; font-size: 0.88rem; color: #1e3a8a;">
+        <strong>Learning Objectives:</strong> Explain how and why businesses encourage ethical behavior (1.6.A) · Explain how business leaders respond to ethical dilemmas (1.6.B) · Distinguish internal from external stakeholders and weigh the impact of a decision on each.
+    </div>
+
+    <!-- ============================================ -->
+    <!-- PART 1: FILL IN THE BLANKS                  -->
+    <!-- ============================================ -->
+    <section>
+        <h2><i>1</i> Essential Knowledge – Fill in the Blanks</h2>
+        <p style="margin:0 0 1rem; color:#2d3a5e; font-size:0.95rem;">
+            Use the word bank to complete each statement. Each blank is worth 1 point (12 total).
+        </p>
+
+        <div style="background: #eef3fd; border-radius: 12px; padding: 0.8rem 1.2rem; margin-bottom: 1.2rem; font-size: 0.9rem; color: #1e3a8a;">
+            <strong>Word bank:</strong> loyalty, harm, perception, information, all, employee, incentive, codes, property, conflicts, external, vision, internal, benefit
+        </div>
+
+        <!-- 1.6.A.1 -->
+        <div class="fill-box">
+            <strong>1.6.A.1</strong> Unethical behavior, such as falsifying or concealing 
+            <input type="text" class="blank-input" data-correct="information" placeholder="..." />,
+            misusing company 
+            <input type="text" class="blank-input" data-correct="property" placeholder="..." />,
+            and causing 
+            <input type="text" class="blank-input" data-correct="harm" placeholder="..." />
+            to employees or customers, can occur at 
+            <input type="text" class="blank-input" data-correct="all" placeholder="..." />
+            levels of business; 
+            <input type="text" class="blank-input" data-correct="incentive" placeholder="..." />
+            structures can influence individuals' choices to gain benefits for themselves unethically.
+        </div>
+
+        <!-- 1.6.A.2 -->
+        <div class="fill-box">
+            <strong>1.6.A.2</strong> Businesses can encourage ethical behavior by implementing 
+            <input type="text" class="blank-input" data-correct="codes" placeholder="..." />
+            of conduct, training employees to follow ethical guidelines, imposing internal repercussions for ethical transgressions, and modeling ethical behavior.
+        </div>
+
+        <!-- 1.6.A.3 -->
+        <div class="fill-box">
+            <strong>1.6.A.3</strong> Ethical business practices can also attract both customers and employees and contribute to brand 
+            <input type="text" class="blank-input" data-correct="loyalty" placeholder="..." />.
+            A business's response to unethical behavior or an ethical dilemma may affect customer and 
+            <input type="text" class="blank-input" data-correct="employee" placeholder="..." />
+            relationships, public 
+            <input type="text" class="blank-input" data-correct="perception" placeholder="..." />
+            of the business, and profitability.
+        </div>
+
+        <!-- 1.6.B.1 -->
+        <div class="fill-box">
+            <strong>1.6.B.1</strong> Ethical dilemmas: when a core value such as transparency, fairness, and empathy 
+            <input type="text" class="blank-input" data-correct="conflicts" placeholder="..." />
+            with other core values or with business goals or practices.
+        </div>
+
+        <!-- 1.6.B.2.i -->
+        <div class="fill-box">
+            <strong>1.6.B.2.i</strong> Owners, managers, and employees are 
+            <input type="text" class="blank-input" data-correct="internal" placeholder="..." />
+            stakeholders.
+        </div>
+
+        <!-- 1.6.B.2.ii -->
+        <div class="fill-box">
+            <strong>1.6.B.2.ii</strong> Customers, government agencies, and community members are 
+            <input type="text" class="blank-input" data-correct="external" placeholder="..." />
+            stakeholders.
+        </div>
+
+        <!-- 1.6.B.3 -->
+        <div class="fill-box">
+            <strong>1.6.B.3</strong> To respond to an ethical dilemma, business leaders often choose the course of action that results in the greatest total 
+            <input type="text" class="blank-input" data-correct="benefit" placeholder="..." />
+            or the least total 
+            <input type="text" class="blank-input" data-correct="harm" placeholder="..." />
+            OR the one that is most consistent with the business's 
+            <input type="text" class="blank-input" data-correct="vision" placeholder="..." />
+            and/or goals.
+        </div>
+
+        <button class="btn" id="checkBlanksBtn">Check Fill-in-the-Blanks</button>
+        <div class="feedback" id="blankFeedback"></div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- PART 2: MULTIPLE CHOICE                     -->
+    <!-- ============================================ -->
+    <section>
+        <h2><i>2</i> Multiple Choice – Check Your Understanding</h2>
+        <p style="margin:0 0 1rem; color:#2d3a5e; font-size:0.95rem;">Choose the best answer for each question. Each is worth 1 point (5 total).</p>
+
+        <div class="mcq" data-correct="C">
+            <div class="question">1. Which of the following is an example of unethical behavior that can occur at any level of a business?</div>
+            <div class="options">
+                <label><input type="radio" name="mcq1" value="A"> A. A manager holding a team meeting to discuss quarterly goals.</label>
+                <label><input type="radio" name="mcq1" value="B"> B. An employee taking a sick day when they are actually well.</label>
+                <label><input type="radio" name="mcq1" value="C"> C. A salesperson falsifying sales reports to earn a higher bonus.</label>
+                <label><input type="radio" name="mcq1" value="D"> D. A company donating to a local charity.</label>
+            </div>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="mcq" data-correct="B">
+            <div class="question">2. How can a business encourage ethical behavior among its employees?</div>
+            <div class="options">
+                <label><input type="radio" name="mcq2" value="A"> A. By ignoring minor ethical violations to keep morale high.</label>
+                <label><input type="radio" name="mcq2" value="B"> B. By implementing a code of conduct and modeling ethical behavior.</label>
+                <label><input type="radio" name="mcq2" value="C"> C. By rewarding employees who maximize profits regardless of method.</label>
+                <label><input type="radio" name="mcq2" value="D"> D. By avoiding any discussion of ethics to prevent conflict.</label>
+            </div>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="mcq" data-correct="A">
+            <div class="question">3. Which of the following is an example of an internal stakeholder?</div>
+            <div class="options">
+                <label><input type="radio" name="mcq3" value="A"> A. A production line employee.</label>
+                <label><input type="radio" name="mcq3" value="B"> B. A customer who buys the company's products.</label>
+                <label><input type="radio" name="mcq3" value="C"> C. A government regulator.</label>
+                <label><input type="radio" name="mcq3" value="D"> D. A community member living near the factory.</label>
+            </div>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="mcq" data-correct="D">
+            <div class="question">4. When responding to an ethical dilemma, business leaders often choose the course of action that:</div>
+            <div class="options">
+                <label><input type="radio" name="mcq4" value="A"> A. Maximizes short-term profit regardless of consequences.</label>
+                <label><input type="radio" name="mcq4" value="B"> B. Pleases the largest number of external stakeholders.</label>
+                <label><input type="radio" name="mcq4" value="C"> C. Avoids all media attention.</label>
+                <label><input type="radio" name="mcq4" value="D"> D. Results in the greatest total benefit or least total harm, or aligns with the business's vision.</label>
+            </div>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="mcq" data-correct="B">
+            <div class="question">5. An ethical dilemma occurs when:</div>
+            <div class="options">
+                <label><input type="radio" name="mcq5" value="A"> A. A business breaks the law.</label>
+                <label><input type="radio" name="mcq5" value="B"> B. A core value such as transparency conflicts with other core values or business goals.</label>
+                <label><input type="radio" name="mcq5" value="C"> C. An employee disagrees with their manager.</label>
+                <label><input type="radio" name="mcq5" value="D"> D. A company loses money in a quarter.</label>
+            </div>
+            <div class="feedback"></div>
+        </div>
+
+        <button class="btn" id="checkMCQBtn">Check MCQs</button>
+        <div class="feedback" id="mcqFeedback"></div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- PART 3: RED FLAG DETECTOR                   -->
+    <!-- ============================================ -->
+    <section>
+        <h2><i>3</i> Red Flag Detector – Northline Athletics</h2>
+        <p style="margin:0 0 0.8rem; color:#2d3a5e; font-size:0.95rem;">
+            Unethical behavior can happen at any level of a business, and incentive structures often push people toward it. Six things were said inside Northline Athletics last quarter. Mark each one as a red flag or not. Each correct flag is worth 1 point (6 total).
+        </p>
+        <p style="margin:0 0 0.8rem; color:#5e6f8d; font-size:0.85rem;"><strong>Types:</strong> Falsifying Information · Concealing Data · Misusing Company Property · Incentive-Driven Shortcut</p>
+        <table class="red-flag-table" id="redFlagTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>What was said or done</th>
+                    <th>Red Flag?</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-correct-flag="Yes" data-correct-type="Falsifying Information">
+                    <td>1</td>
+                    <td>A regional manager rounds 4,900 units sold up to 5,000 on the report that triggers her bonus at 5,000.</td>
+                    <td>
+                        <select class="flag-select">
+                            <option value="">—</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="type-select">
+                            <option value="">—</option>
+                            <option value="Falsifying Information">Falsifying Information</option>
+                            <option value="Concealing Data">Concealing Data</option>
+                            <option value="Misusing Company Property">Misusing Company Property</option>
+                            <option value="Incentive-Driven Shortcut">Incentive-Driven Shortcut</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr data-correct-flag="Yes" data-correct-type="Misusing Company Property">
+                    <td>2</td>
+                    <td>A designer takes home a sample bottle from the prototype shelf to show her family.</td>
+                    <td>
+                        <select class="flag-select">
+                            <option value="">—</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="type-select">
+                            <option value="">—</option>
+                            <option value="Falsifying Information">Falsifying Information</option>
+                            <option value="Concealing Data">Concealing Data</option>
+                            <option value="Misusing Company Property">Misusing Company Property</option>
+                            <option value="Incentive-Driven Shortcut">Incentive-Driven Shortcut</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr data-correct-flag="Yes" data-correct-type="Concealing Data">
+                    <td>3</td>
+                    <td>A lab tech files the failed stress test in a folder nobody opens, and reports only the passing tests upward.</td>
+                    <td>
+                        <select class="flag-select">
+                            <option value="">—</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="type-select">
+                            <option value="">—</option>
+                            <option value="Falsifying Information">Falsifying Information</option>
+                            <option value="Concealing Data">Concealing Data</option>
+                            <option value="Misusing Company Property">Misusing Company Property</option>
+                            <option value="Incentive-Driven Shortcut">Incentive-Driven Shortcut</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr data-correct-flag="No" data-correct-type="">
+                    <td>4</td>
+                    <td>A supervisor tells the team that anyone who misses the shipping deadline will be moved off the account.</td>
+                    <td>
+                        <select class="flag-select">
+                            <option value="">—</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="type-select">
+                            <option value="">—</option>
+                            <option value="Falsifying Information">Falsifying Information</option>
+                            <option value="Concealing Data">Concealing Data</option>
+                            <option value="Misusing Company Property">Misusing Company Property</option>
+                            <option value="Incentive-Driven Shortcut">Incentive-Driven Shortcut</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr data-correct-flag="Yes" data-correct-type="Misusing Company Property">
+                    <td>5</td>
+                    <td>The head of quality control uses the company van every weekend to run a side business.</td>
+                    <td>
+                        <select class="flag-select">
+                            <option value="">—</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="type-select">
+                            <option value="">—</option>
+                            <option value="Falsifying Information">Falsifying Information</option>
+                            <option value="Concealing Data">Concealing Data</option>
+                            <option value="Misusing Company Property">Misusing Company Property</option>
+                            <option value="Incentive-Driven Shortcut">Incentive-Driven Shortcut</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr data-correct-flag="Yes" data-correct-type="Falsifying Information">
+                    <td>6</td>
+                    <td>A sales rep tells a buyer the bottles are dishwasher safe. Nobody has ever tested that.</td>
+                    <td>
+                        <select class="flag-select">
+                            <option value="">—</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="type-select">
+                            <option value="">—</option>
+                            <option value="Falsifying Information">Falsifying Information</option>
+                            <option value="Concealing Data">Concealing Data</option>
+                            <option value="Misusing Company Property">Misusing Company Property</option>
+                            <option value="Incentive-Driven Shortcut">Incentive-Driven Shortcut</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="btn" id="checkRedFlagBtn">Check Red Flags</button>
+        <div class="feedback" id="redFlagFeedback"></div>
+
+        <p style="font-weight:500; color:#1e2b4f; margin:1.5rem 0 0.3rem;">Look at #1 and #4 together. Explain how an incentive structure can produce unethical behavior even when nobody involved thinks of themselves as dishonest. (2 pts keyword-based)</p>
+        <textarea id="incentiveExplanation" class="open-textarea" placeholder="Type your response here..."></textarea>
+        <div id="incentiveFeedback" class="keyword-feedback"></div>
+        <div class="model-answer" id="incentiveModel">
+            <strong>Model Answer:</strong> The incentive structure at Northline Athletics directly rewards meeting a specific sales threshold (5,000 units) and punishes missing a shipping deadline. When a bonus or job security depends on hitting a number, individuals may rationalize small dishonest actions—like rounding up 4,900 to 5,000 or cutting corners—as necessary to meet the target. Neither person set out to be dishonest, but the system made the unethical option the rational one. The company designed the incentive, so it owns part of the outcome.
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- PART 4: STAKEHOLDER ANALYSIS               -->
+    <!-- ============================================ -->
+    <section>
+        <h2><i>4</i> Stakeholder Analysis – Northline Athletics</h2>
+        <div class="scenario-box">
+            <p><strong>NORTHLINE ATHLETICS, INTERNAL, CONFIDENTIAL</strong></p>
+            <p>Northline Athletics has shipped 12,000 insulated water bottles this fall. Two weeks ago, a returned bottle came back with a hairline crack in the cap. Internal testing has now confirmed that roughly one cap in every two hundred can crack under repeated pressure, and that when it does, a small amount of adhesive can enter the liquid. No customer has reported an injury. No regulator has asked a question. Nobody outside the building knows.</p>
+            <p>Northline's published core values are <strong>SAFETY FIRST, RADICAL TRANSPARENCY, and RELENTLESS QUALITY</strong>. The company is nine months from an investor round that would fund a new factory and 60 new jobs.</p>
+        </div>
+
+        <p style="font-weight:500; color:#1e2b4f; margin:1rem 0 0.5rem;">Stakeholder Scorecard</p>
+        <p style="margin:0 0 0.8rem; color:#2d3a5e; font-size:0.9rem;">Label each stakeholder group as Internal (I) or External (E). Each correct label is worth 1 point (6 total).</p>
+
+        <table class="stakeholder-table" id="stakeholderTable">
+            <thead>
+                <tr>
+                    <th>Stakeholder Group</th>
+                    <th>I or E</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-correct-ie="E">
+                    <td>Customers who already own a bottle</td>
+                    <td><select class="ie-select"><option value="">—</option><option value="I">I</option><option value="E">E</option></select></td>
+                </tr>
+                <tr data-correct-ie="I">
+                    <td>Employees on the production line</td>
+                    <td><select class="ie-select"><option value="">—</option><option value="I">I</option><option value="E">E</option></select></td>
+                </tr>
+                <tr data-correct-ie="I">
+                    <td>The owners and investors</td>
+                    <td><select class="ie-select"><option value="">—</option><option value="I">I</option><option value="E">E</option></select></td>
+                </tr>
+                <tr data-correct-ie="I">
+                    <td>Managers who signed off on the cap design</td>
+                    <td><select class="ie-select"><option value="">—</option><option value="I">I</option><option value="E">E</option></select></td>
+                </tr>
+                <tr data-correct-ie="E">
+                    <td>The surrounding community and the 60 future jobs</td>
+                    <td><select class="ie-select"><option value="">—</option><option value="I">I</option><option value="E">E</option></select></td>
+                </tr>
+                <tr data-correct-ie="E">
+                    <td>Government safety regulators</td>
+                    <td><select class="ie-select"><option value="">—</option><option value="I">I</option><option value="E">E</option></select></td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="btn" id="checkIEBtn">Check I/E Labels</button>
+        <div class="feedback" id="ieFeedback"></div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- PART 5: ETHICAL DILEMMA SCENARIOS (FRQ)    -->
+    <!-- ============================================ -->
+    <section>
+        <h2><i>5</i> Ethical Dilemma Scenarios – FRQ Practice</h2>
+        <p style="margin:0 0 1rem; color:#2d3a5e; font-size:0.95rem;">
+            These are free-response questions. Your answers will be checked for key words and awarded partial credit. Model answers will appear after you submit for review.
+        </p>
+
+        <!-- SoleSwap -->
+        <div class="scenario-box">
+            <p><strong>SoleSwap</strong> is a sneaker resale marketplace that connects independent sellers with buyers. SoleSwap's stated core value is <strong>transparency</strong>. Recently, the platform discovered that some sellers have been listing used sneakers as "new" and inflating the original retail price to make their profit margins look smaller than they are. SoleSwap's data team estimates that roughly <strong>15% of listings</strong> contain at least one misleading claim.</p>
+            <p>SoleSwap is considering two responses:</p>
+            <ul>
+                <li><strong>Option A:</strong> Send all sellers a reminder email about the platform's honesty policy and update the listing guidelines page.</li>
+                <li><strong>Option B:</strong> Launch an active verification system in which SoleSwap staff review flagged listings, remove those with false claims, and suspend sellers who repeatedly violate the policy. Sellers who pass verification receive a "Verified Accurate" badge on their listings.</li>
+            </ul>
+        </div>
+        <p style="font-weight:500; color:#1e2b4f; margin:0.5rem 0;">a. Using the data provided and the concept of ethical behavior, compare Options A and B against SoleSwap's stated core value of transparency and its goal of maintaining buyer trust. Then recommend which option SoleSwap should adopt. Justify your recommendation. (5 pts keyword-based)</p>
+        <textarea id="soleSwapAnswer" class="open-textarea" placeholder="Type your response here..." style="min-height:120px;"></textarea>
+        <div id="soleSwapFeedback" class="keyword-feedback"></div>
+        <div class="model-answer" id="soleSwapModel">
+            <strong>Model Answer:</strong> Option A is weakly aligned with transparency because a reminder email does not address the 15% of listings already containing misleading claims or enforce consequences for dishonest sellers. Option B is strongly aligned with transparency because active verification directly removes false listings and creates a visible, credible signal (the badge) that listings are accurate. Option B better maintains buyer trust because buyers receive confirmed, accurate information before purchasing, whereas Option A leaves misleading listings in place. However, Option B has higher operational costs and places a burden on sellers. Despite this trade-off, SoleSwap should adopt Option B because it directly supports the core value of transparency and the goal of maintaining buyer trust, using evidence from the scenario.
+        </div>
+
+        <!-- AerialEye -->
+        <div class="scenario-box" style="margin-top:1.8rem;">
+            <p><strong>AerialEye</strong> is a commercial drone-photography service that captures images for real estate listings, construction sites, and outdoor events. AerialEye's stated core value is <strong>client trust</strong>. The company recently surveyed 120 current and former clients to evaluate their experiences.</p>
+            <p><strong>Survey Findings (120 respondents):</strong></p>
+            <ul>
+                <li>68% of respondents said they chose AerialEye specifically because of its reputation for honest, accurate project estimates.</li>
+                <li>41% reported that a pilot had delivered final images that did not match the scope agreed upon in the project contract, without notifying the client in advance.</li>
+                <li>29% said the undisclosed changes caused them to miss a listing deadline or project milestone.</li>
+                <li>52% of dissatisfied clients said they would not hire AerialEye again and would warn others.</li>
+                <li>0 of the affected clients had received a proactive explanation or apology from AerialEye before the survey was conducted.</li>
+            </ul>
+            <p>AerialEye's leadership is reviewing this data to decide how to respond.</p>
+        </div>
+        <p style="font-weight:500; color:#1e2b4f; margin:0.5rem 0;">(A) Identify the type of unethical behavior reflected in the survey data and explain how it relates to AerialEye's core value. (2 pts keyword-based)</p>
+        <textarea id="aerialEyeA" class="open-textarea" placeholder="Type your response here..."></textarea>
+        <div id="aerialEyeAFeedback" class="keyword-feedback"></div>
+        <div class="model-answer" id="aerialEyeAModel">
+            <strong>Model Answer:</strong> The unethical behavior is concealing or failing to disclose information—specifically, pilots delivered images outside the agreed scope without notifying clients in advance. This conflicts with AerialEye's core value of client trust because concealing project changes from clients undermines the honest, transparent relationship that trust requires.
+        </div>
+
+        <p style="font-weight:500; color:#1e2b4f; margin:1rem 0 0.3rem;">(B) Explain how this unethical behavior could affect AerialEye's profitability. Use at least one specific finding from the survey data in your explanation. (2 pts keyword-based)</p>
+        <textarea id="aerialEyeB" class="open-textarea" placeholder="Type your response here..."></textarea>
+        <div id="aerialEyeBFeedback" class="keyword-feedback"></div>
+        <div class="model-answer" id="aerialEyeBModel">
+            <strong>Model Answer:</strong> The unethical behavior could reduce profitability because 52% of dissatisfied clients said they would not rehire AerialEye and would warn others. This means lost repeat business and negative word-of-mouth that reduces new client acquisition, which lowers revenue. Additionally, 41% experienced undisclosed changes, which could lead to refunds, lawsuits, or reputational damage that further reduces profitability.
+        </div>
+
+        <p style="font-weight:500; color:#1e2b4f; margin:1rem 0 0.3rem;">(C) Recommend one specific mechanism AerialEye's leadership could use to encourage ethical behavior going forward. Explain how that mechanism would address the behavior identified in part (A). (2 pts keyword-based)</p>
+        <textarea id="aerialEyeC" class="open-textarea" placeholder="Type your response here..."></textarea>
+        <div id="aerialEyeCFeedback" class="keyword-feedback"></div>
+        <div class="model-answer" id="aerialEyeCModel">
+            <strong>Model Answer:</strong> AerialEye should implement a code of conduct that explicitly requires pilots to notify clients of any scope change before delivering final images. This mechanism directly addresses the behavior identified in part (A) by making the expected behavior clear and enforceable, and by ensuring that clients are informed of any deviations from the contract before they receive the final product.
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- PART 6: TECH COMPANY DILEMMA (FRQ)          -->
+    <!-- ============================================ -->
+    <section>
+        <h2><i>6</i> Tech Company Dilemma – FRQ Practice</h2>
+        <div class="scenario-box">
+            <p><strong>Scenario:</strong> A tech company discovers a minor bug in their new software that could potentially lead to a small data leak for 1% of users. Fixing the bug will delay the product launch by two months, costing the company $5 million in lost sales and potentially causing the stock price to drop.</p>
+        </div>
+
+        <p style="font-weight:500; color:#1e2b4f; margin:0.5rem 0 0.3rem;">1. Identify the Stakeholders: Who is affected by this decision? (2 pts keyword-based)</p>
+        <textarea id="frqStakeholders" class="open-textarea" placeholder="Type your response here..."></textarea>
+        <div id="frqStakeholdersFeedback" class="keyword-feedback"></div>
+        <div class="model-answer" id="frqStakeholdersModel">
+            <strong>Model Answer:</strong> Customers (potential data leak), Shareholders (stock price drop), Employees (job security if sales drop), and the Company's Management (reputation).
+        </div>
+
+        <p style="font-weight:500; color:#1e2b4f; margin:1rem 0 0.3rem;">2. The Trade-off: What is the short-term gain vs. the long-term risk? (2 pts keyword-based)</p>
+        <textarea id="frqTradeoff" class="open-textarea" placeholder="Type your response here..."></textarea>
+        <div id="frqTradeoffFeedback" class="keyword-feedback"></div>
+        <div class="model-answer" id="frqTradeoffModel">
+            <strong>Model Answer:</strong> The short-term gain is $5 million in sales and maintaining the stock price. The long-term risk is a massive loss of customer trust, potential lawsuits, and a damaged brand reputation if the data leak occurs.
+        </div>
+
+        <p style="font-weight:500; color:#1e2b4f; margin:1rem 0 0.3rem;">3. What should the company do? Justify your decision using ethical principles. (3 pts keyword-based)</p>
+        <textarea id="frqDecision" class="open-textarea" placeholder="Type your response here..."></textarea>
+        <div id="frqDecisionFeedback" class="keyword-feedback"></div>
+        <div class="model-answer" id="frqDecisionModel">
+            <strong>Model Answer:</strong> The company should fix the bug and delay the launch. While it costs $5 million now, the long-term cost of a data breach—both financially and reputationally—is much higher. Ethical principles like transparency and accountability require protecting customers' data above short-term profit.
+        </div>
+
+        <button class="btn btn-secondary" id="checkFRQBtn" style="margin-top:1.5rem;">Check FRQ Answers (Keyword-Based)</button>
+        <div class="feedback" id="frqFeedback"></div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- PART 7: FINISHER – ETHICS POLICY           -->
+    <!-- ============================================ -->
+    <section>
+        <h2><i>7</i> Finisher Activity – Create Your Ethics Policy</h2>
+        <p style="margin:0 0 0.5rem; color:#2d3a5e; font-size:0.95rem;">Recall your business idea from previous topics. Create a 3-rule ethics policy for your company. (3 pts participation)</p>
+
+        <p style="font-weight:500; color:#1e2b4f; margin:0.8rem 0 0.3rem;">1. Your Business Idea:</p>
+        <input type="text" id="businessIdea" placeholder="e.g., Solar-Charging Backpack" style="width:100%; padding:0.8rem 1rem; border-radius:12px; border:1.5px solid #dbe3f0; font-size:0.95rem; outline:none;" />
+
+        <p style="font-weight:500; color:#1e2b4f; margin:1rem 0 0.3rem;">2. Your Ethics Policy (3 Rules):</p>
+        <textarea id="ethicsRule1" class="open-textarea" style="min-height:50px;" placeholder="Rule 1..."></textarea>
+        <textarea id="ethicsRule2" class="open-textarea" style="min-height:50px; margin-top:0.5rem;" placeholder="Rule 2..."></textarea>
+        <textarea id="ethicsRule3" class="open-textarea" style="min-height:50px; margin-top:0.5rem;" placeholder="Rule 3..."></textarea>
+
+        <p style="font-weight:500; color:#1e2b4f; margin:1rem 0 0.3rem;">3. The "Why":</p>
+        <textarea id="ethicsWhy" class="open-textarea" placeholder="Explain why these rules matter for your business..."></textarea>
+
+        <div class="model-answer" id="ethicsModel" style="margin-top:1rem;">
+            <strong>Model Answer:</strong> These rules ensure that our brand is built on trust and integrity. If we use unethical labor or produce unsafe products, we will lose our customers' loyalty and face legal consequences that would eventually destroy the business.
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SAVE SECTION                                 -->
+    <!-- ============================================ -->
+    <div style="display:flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap:1rem; margin-top:1rem;">
+        <button class="btn btn-secondary" id="saveBtn">💾 Save All Responses</button>
+        <div style="font-size:0.9rem; color:#5e6f8d;">Your score is shown at the top. Save and submit on Teams.</div>
+    </div>
+    <div class="footer-note">
+        ⚡ AP Business & Personal Finance · Topic 1.6 Business Ethics · Complete self-paced interactive worksheet
+    </div>
+</div>
+
+<script>
+    (function() {
+        // ---- Elements ----
+        const blankInputs = document.querySelectorAll('.blank-input');
+        const checkBlanksBtn = document.getElementById('checkBlanksBtn');
+        const blankFeedback = document.getElementById('blankFeedback');
+
+        const mcqs = document.querySelectorAll('.mcq');
+        const checkMCQBtn = document.getElementById('checkMCQBtn');
+        const mcqFeedback = document.getElementById('mcqFeedback');
+
+        const redFlagRows = document.querySelectorAll('#redFlagTable tbody tr');
+        const checkRedFlagBtn = document.getElementById('checkRedFlagBtn');
+        const redFlagFeedback = document.getElementById('redFlagFeedback');
+
+        const ieSelects = document.querySelectorAll('.ie-select');
+        const checkIEBtn = document.getElementById('checkIEBtn');
+        const ieFeedback = document.getElementById('ieFeedback');
+
+        const checkFRQBtn = document.getElementById('checkFRQBtn');
+        const frqFeedback = document.getElementById('frqFeedback');
+
+        const studentName = document.getElementById('studentName');
+        const studentDate = document.getElementById('studentDate');
+        const studentPeriod = document.getElementById('studentPeriod');
+        const saveBtn = document.getElementById('saveBtn');
+        const topScoreDisplay = document.getElementById('topScoreDisplay');
+
+        // FRQ elements
+        const incentiveExplanation = document.getElementById('incentiveExplanation');
+        const soleSwapAnswer = document.getElementById('soleSwapAnswer');
+        const aerialEyeA = document.getElementById('aerialEyeA');
+        const aerialEyeB = document.getElementById('aerialEyeB');
+        const aerialEyeC = document.getElementById('aerialEyeC');
+        const frqStakeholders = document.getElementById('frqStakeholders');
+        const frqTradeoff = document.getElementById('frqTradeoff');
+        const frqDecision = document.getElementById('frqDecision');
+        const businessIdea = document.getElementById('businessIdea');
+        const ethicsRule1 = document.getElementById('ethicsRule1');
+        const ethicsRule2 = document.getElementById('ethicsRule2');
+        const ethicsRule3 = document.getElementById('ethicsRule3');
+        const ethicsWhy = document.getElementById('ethicsWhy');
+
+        // Feedback elements for FRQs
+        const incentiveFeedback = document.getElementById('incentiveFeedback');
+        const soleSwapFeedback = document.getElementById('soleSwapFeedback');
+        const aerialEyeAFeedback = document.getElementById('aerialEyeAFeedback');
+        const aerialEyeBFeedback = document.getElementById('aerialEyeBFeedback');
+        const aerialEyeCFeedback = document.getElementById('aerialEyeCFeedback');
+        const frqStakeholdersFeedback = document.getElementById('frqStakeholdersFeedback');
+        const frqTradeoffFeedback = document.getElementById('frqTradeoffFeedback');
+        const frqDecisionFeedback = document.getElementById('frqDecisionFeedback');
+
+        // Model answers
+        const incentiveModel = document.getElementById('incentiveModel');
+        const soleSwapModel = document.getElementById('soleSwapModel');
+        const aerialEyeAModel = document.getElementById('aerialEyeAModel');
+        const aerialEyeBModel = document.getElementById('aerialEyeBModel');
+        const aerialEyeCModel = document.getElementById('aerialEyeCModel');
+        const frqStakeholdersModel = document.getElementById('frqStakeholdersModel');
+        const frqTradeoffModel = document.getElementById('frqTradeoffModel');
+        const frqDecisionModel = document.getElementById('frqDecisionModel');
+        const ethicsModel = document.getElementById('ethicsModel');
+
+        // ---- State ----
+        let blankScore = 0;
+        let mcqScore = 0;
+        let redFlagScore = 0;
+        let ieScore = 0;
+        let frqScore = 0;
+
+        // Scoring breakdown:
+        // Blanks: 12 inputs × 1 pt = 12
+        // MCQ: 5 questions × 1 pt = 5
+        // Red flags: 6 rows × 1 pt (yes/no only) = 6
+        // IE labels: 6 × 1 pt = 6
+        // Incentive explanation: 2 pts
+        // SoleSwap: 5 pts
+        // AerialEye A: 2 pts
+        // AerialEye B: 2 pts
+        // AerialEye C: 2 pts
+        // Tech Stakeholders: 2 pts
+        // Tech Tradeoff: 2 pts
+        // Tech Decision: 3 pts
+        // Finisher: 3 pts (participation)
+        // Total = 12+5+6+6+2+5+2+2+2+2+2+3+3 = 52? Let's recalc:
+        // 12+5+6+6 = 29
+        // FRQ: incentive 2, soleSwap 5, aerialA 2, aerialB 2, aerialC 2, techStake 2, techTrade 2, techDecision 3 = 20
+        // Finisher: 3
+        // Total = 29 + 20 + 3 = 52
+        const MAX = 52;
+
+        // ---- Load saved data ----
+        function getStorageKey() {
+            const name = studentName.value.trim() || 'anonymous';
+            const date = studentDate.value.trim() || 'nodate';
+            const period = studentPeriod.value.trim() || 'noperiod';
+            return `ap_business_1_6_final_${name}_${date}_${period}`;
+        }
+
+        function saveToLocalStorage() {
+            const data = {
+                studentName: studentName.value,
+                studentDate: studentDate.value,
+                studentPeriod: studentPeriod.value,
+                blanks: Array.from(blankInputs).map(i => i.value),
+                mcqAnswers: Array.from(mcqs).map(m => {
+                    const sel = m.querySelector('input[type="radio"]:checked');
+                    return sel ? sel.value : null;
+                }),
+                redFlagSelects: Array.from(document.querySelectorAll('.flag-select')).map(s => s.value),
+                redFlagTypes: Array.from(document.querySelectorAll('.type-select')).map(s => s.value),
+                ieSelects: Array.from(ieSelects).map(s => s.value),
+                incentiveExplanation: incentiveExplanation.value,
+                soleSwapAnswer: soleSwapAnswer.value,
+                aerialEyeA: aerialEyeA.value,
+                aerialEyeB: aerialEyeB.value,
+                aerialEyeC: aerialEyeC.value,
+                frqStakeholders: frqStakeholders.value,
+                frqTradeoff: frqTradeoff.value,
+                frqDecision: frqDecision.value,
+                businessIdea: businessIdea.value,
+                ethicsRule1: ethicsRule1.value,
+                ethicsRule2: ethicsRule2.value,
+                ethicsRule3: ethicsRule3.value,
+                ethicsWhy: ethicsWhy.value,
+                frqScore: frqScore,
+            };
+            try {
+                localStorage.setItem(getStorageKey(), JSON.stringify(data));
+                const genericKey = `ap_business_1_6_final_${studentName.value.trim() || 'anonymous'}_${studentDate.value.trim() || 'nodate'}`;
+                localStorage.setItem(genericKey, JSON.stringify(data));
+            } catch (e) {
+                console.warn('Could not save to localStorage', e);
+            }
+        }
+
+        function loadFromLocalStorage() {
+            const key = getStorageKey();
+            const saved = localStorage.getItem(key);
+            if (!saved) return;
+            try {
+                const data = JSON.parse(saved);
+                if (data.studentName) studentName.value = data.studentName;
+                if (data.studentDate) studentDate.value = data.studentDate;
+                if (data.studentPeriod) studentPeriod.value = data.studentPeriod;
+                if (data.blanks) {
+                    blankInputs.forEach((inp, i) => {
+                        if (data.blanks[i] !== undefined) inp.value = data.blanks[i];
+                    });
+                }
+                if (data.mcqAnswers) {
+                    mcqs.forEach((m, i) => {
+                        if (data.mcqAnswers[i]) {
+                            const radio = m.querySelector(`input[value="${data.mcqAnswers[i]}"]`);
+                            if (radio) radio.checked = true;
+                        }
+                    });
+                }
+                if (data.redFlagSelects) {
+                    document.querySelectorAll('.flag-select').forEach((s, i) => {
+                        if (data.redFlagSelects[i] !== undefined) s.value = data.redFlagSelects[i];
+                    });
+                }
+                if (data.redFlagTypes) {
+                    document.querySelectorAll('.type-select').forEach((s, i) => {
+                        if (data.redFlagTypes[i] !== undefined) s.value = data.redFlagTypes[i];
+                    });
+                }
+                if (data.ieSelects) {
+                    ieSelects.forEach((s, i) => {
+                        if (data.ieSelects[i] !== undefined) s.value = data.ieSelects[i];
+                    });
+                }
+                if (data.incentiveExplanation) incentiveExplanation.value = data.incentiveExplanation;
+                if (data.soleSwapAnswer) soleSwapAnswer.value = data.soleSwapAnswer;
+                if (data.aerialEyeA) aerialEyeA.value = data.aerialEyeA;
+                if (data.aerialEyeB) aerialEyeB.value = data.aerialEyeB;
+                if (data.aerialEyeC) aerialEyeC.value = data.aerialEyeC;
+                if (data.frqStakeholders) frqStakeholders.value = data.frqStakeholders;
+                if (data.frqTradeoff) frqTradeoff.value = data.frqTradeoff;
+                if (data.frqDecision) frqDecision.value = data.frqDecision;
+                if (data.businessIdea) businessIdea.value = data.businessIdea;
+                if (data.ethicsRule1) ethicsRule1.value = data.ethicsRule1;
+                if (data.ethicsRule2) ethicsRule2.value = data.ethicsRule2;
+                if (data.ethicsRule3) ethicsRule3.value = data.ethicsRule3;
+                if (data.ethicsWhy) ethicsWhy.value = data.ethicsWhy;
+                if (data.frqScore !== undefined) frqScore = data.frqScore;
+            } catch (e) {
+                console.warn('Could not load saved data', e);
+            }
+        }
+
+        // ---- Keyword-based FRQ Grading ----
+        function gradeFRQs() {
+            let totalFRQ = 0;
+
+            // 1. Incentive explanation (2 pts)
+            const incText = incentiveExplanation.value.toLowerCase();
+            let incScore = 0;
+            if (incText.includes('incentive') || incText.includes('bonus') || incText.includes('reward')) incScore++;
+            if (incText.includes('rational') || incText.includes('justify') || incText.includes('pressure') || incText.includes('threshold') || incText.includes('deadline')) incScore++;
+            incScore = Math.min(incScore, 2);
+            totalFRQ += incScore;
+            incentiveFeedback.innerHTML = `<span style="color:#1e3a8a;">Score: ${incScore}/2 (keywords: incentive/bonus/reward, rational/pressure/threshold)</span>`;
+            incentiveModel.classList.add('show');
+
+            // 2. SoleSwap (5 pts)
+            const soleText = soleSwapAnswer.value.toLowerCase();
+            let soleScore = 0;
+            if (soleText.includes('option a') && (soleText.includes('weak') || soleText.includes('not enough') || soleText.includes('reminder') || soleText.includes('email'))) soleScore++;
+            if (soleText.includes('option b') && (soleText.includes('strong') || soleText.includes('verification') || soleText.includes('removes') || soleText.includes('badge'))) soleScore++;
+            if (soleText.includes('trust') || soleText.includes('buyer')) soleScore++;
+            if (soleText.includes('cost') || soleText.includes('trade-off') || soleText.includes('burden') || soleText.includes('time')) soleScore++;
+            if (soleText.includes('recommend') || soleText.includes('should adopt') || soleText.includes('option b')) soleScore++;
+            soleScore = Math.min(soleScore, 5);
+            totalFRQ += soleScore;
+            soleSwapFeedback.innerHTML = `<span style="color:#1e3a8a;">Score: ${soleScore}/5 (keywords: Option A weak, Option B strong, trust, trade-off, recommend B)</span>`;
+            soleSwapModel.classList.add('show');
+
+            // 3. AerialEye A (2 pts)
+            const aText = aerialEyeA.value.toLowerCase();
+            let aScore = 0;
+            if (aText.includes('conceal') || aText.includes('not disclos') || aText.includes('hidden') || aText.includes('undisclosed') || aText.includes('without notifying')) aScore++;
+            if (aText.includes('trust') || aText.includes('client trust') || aText.includes('core value')) aScore++;
+            aScore = Math.min(aScore, 2);
+            totalFRQ += aScore;
+            aerialEyeAFeedback.innerHTML = `<span style="color:#1e3a8a;">Score: ${aScore}/2 (keywords: conceal/undisclosed, trust/core value)</span>`;
+            aerialEyeAModel.classList.add('show');
+
+            // 4. AerialEye B (2 pts)
+            const bText = aerialEyeB.value.toLowerCase();
+            let bScore = 0;
+            if (bText.includes('52%') || bText.includes('not hire') || bText.includes('warn') || bText.includes('word of mouth')) bScore++;
+            if (bText.includes('profit') || bText.includes('revenue') || bText.includes('lost business') || bText.includes('reduced')) bScore++;
+            bScore = Math.min(bScore, 2);
+            totalFRQ += bScore;
+            aerialEyeBFeedback.innerHTML = `<span style="color:#1e3a8a;">Score: ${bScore}/2 (keywords: 52%/not hire/warn, profit/revenue/lost business)</span>`;
+            aerialEyeBModel.classList.add('show');
+
+            // 5. AerialEye C (2 pts)
+            const cText = aerialEyeC.value.toLowerCase();
+            let cScore = 0;
+            if (cText.includes('code of conduct') || cText.includes('ethics training') || cText.includes('policy') || cText.includes('repercussion')) cScore++;
+            if (cText.includes('notify') || cText.includes('scope change') || cText.includes('disclose') || cText.includes('before deliver')) cScore++;
+            cScore = Math.min(cScore, 2);
+            totalFRQ += cScore;
+            aerialEyeCFeedback.innerHTML = `<span style="color:#1e3a8a;">Score: ${cScore}/2 (keywords: code of conduct/policy, notify/scope change)</span>`;
+            aerialEyeCModel.classList.add('show');
+
+            // 6. Tech Stakeholders (2 pts)
+            const stakeText = frqStakeholders.value.toLowerCase();
+            let stakeScore = 0;
+            if (stakeText.includes('customer') || stakeText.includes('user')) stakeScore++;
+            if (stakeText.includes('shareholder') || stakeText.includes('investor') || stakeText.includes('employee') || stakeText.includes('management')) stakeScore++;
+            stakeScore = Math.min(stakeScore, 2);
+            totalFRQ += stakeScore;
+            frqStakeholdersFeedback.innerHTML = `<span style="color:#1e3a8a;">Score: ${stakeScore}/2 (keywords: customers/users, shareholders/employees/management)</span>`;
+            frqStakeholdersModel.classList.add('show');
+
+            // 7. Tech Trade-off (2 pts)
+            const tradeText = frqTradeoff.value.toLowerCase();
+            let tradeScore = 0;
+            if (tradeText.includes('5 million') || tradeText.includes('$5') || tradeText.includes('short-term') || tradeText.includes('sales')) tradeScore++;
+            if (tradeText.includes('trust') || tradeText.includes('lawsuit') || tradeText.includes('reputation') || tradeText.includes('long-term')) tradeScore++;
+            tradeScore = Math.min(tradeScore, 2);
+            totalFRQ += tradeScore;
+            frqTradeoffFeedback.innerHTML = `<span style="color:#1e3a8a;">Score: ${tradeScore}/2 (keywords: $5M/short-term, trust/lawsuit/reputation/long-term)</span>`;
+            frqTradeoffModel.classList.add('show');
+
+            // 8. Tech Decision (3 pts)
+            const decText = frqDecision.value.toLowerCase();
+            let decScore = 0;
+            if (decText.includes('fix') || decText.includes('delay') || decText.includes('patch')) decScore++;
+            if (decText.includes('ethic') || decText.includes('transparen') || decText.includes('accountab') || decText.includes('trust')) decScore++;
+            if (decText.includes('long-term') || decText.includes('reputation') || decText.includes('customer')) decScore++;
+            decScore = Math.min(decScore, 3);
+            totalFRQ += decScore;
+            frqDecisionFeedback.innerHTML = `<span style="color:#1e3a8a;">Score: ${decScore}/3 (keywords: fix/delay, ethics/transparency/accountability, long-term/reputation/customer)</span>`;
+            frqDecisionModel.classList.add('show');
+
+            // 9. Finisher (3 pts participation)
+            let finisherScore = 0;
+            if (businessIdea.value.trim().length > 2) finisherScore++;
+            if (ethicsRule1.value.trim().length > 5 && ethicsRule2.value.trim().length > 5 && ethicsRule3.value.trim().length > 5) finisherScore++;
+            if (ethicsWhy.value.trim().length > 10) finisherScore++;
+            finisherScore = Math.min(finisherScore, 3);
+            totalFRQ += finisherScore;
+            ethicsModel.classList.add('show');
+
+            frqScore = totalFRQ;
+            frqFeedback.innerHTML = `<span class="success-msg">FRQ total: ${frqScore} / 20 (plus 3 pts for Finisher activity). Model answers shown below.</span>`;
+            updateScore();
+        }
+
+        // ---- Standard Grading ----
+        function gradeBlanks() {
+            let correct = 0;
+            blankInputs.forEach(inp => {
+                const correctAns = inp.dataset.correct.toLowerCase().trim();
+                const userAns = inp.value.trim().toLowerCase();
+                if (userAns === correctAns) {
+                    correct++;
+                    inp.classList.add('correct');
+                    inp.classList.remove('incorrect');
+                } else {
+                    inp.classList.add('incorrect');
+                    inp.classList.remove('correct');
+                }
+            });
+            blankScore = correct;
+            blankFeedback.innerHTML = correct === blankInputs.length
+                ? '<span class="success-msg">✓ All blanks correct!</span>'
+                : `<span class="error-msg">${correct} out of ${blankInputs.length} blanks correct. Review your answers.</span>`;
+            updateScore();
+        }
+
+        function gradeMCQs() {
+            let correct = 0;
+            mcqs.forEach(mcq => {
+                const correctAns = mcq.dataset.correct;
+                const selected = mcq.querySelector('input[type="radio"]:checked');
+                const fb = mcq.querySelector('.feedback');
+                if (selected && selected.value === correctAns) {
+                    correct++;
+                    fb.innerHTML = '<span class="success-msg">✓ Correct!</span>';
+                } else {
+                    fb.innerHTML = '<span class="error-msg">✗ Incorrect. The correct answer is ' + correctAns + '.</span>';
+                }
+            });
+            mcqScore = correct;
+            mcqFeedback.innerHTML = correct === mcqs.length
+                ? '<span class="success-msg">✓ All MCQs correct!</span>'
+                : `<span class="error-msg">${correct} out of ${mcqs.length} MCQs correct.</span>`;
+            updateScore();
+        }
+
+        function gradeRedFlags() {
+            let correct = 0;
+            redFlagRows.forEach(row => {
+                const correctFlag = row.dataset.correctFlag;
+                const flagSelect = row.querySelector('.flag-select');
+                if (flagSelect.value === correctFlag) {
+                    correct++;
+                    flagSelect.classList.add('correct');
+                    flagSelect.classList.remove('incorrect');
+                } else {
+                    flagSelect.classList.add('incorrect');
+                    flagSelect.classList.remove('correct');
+                }
+            });
+            redFlagScore = correct;
+            redFlagFeedback.innerHTML = correct === redFlagRows.length
+                ? '<span class="success-msg">✓ All red flag identifications correct!</span>'
+                : `<span class="error-msg">${correct} out of ${redFlagRows.length} red flag identifications correct.</span>`;
+            updateScore();
+        }
+
+        function gradeIE() {
+            let correct = 0;
+            ieSelects.forEach(sel => {
+                const row = sel.closest('tr');
+                const correctAns = row.dataset.correctIe;
+                if (sel.value === correctAns) {
+                    correct++;
+                    sel.classList.add('correct');
+                    sel.classList.remove('incorrect');
+                } else {
+                    sel.classList.add('incorrect');
+                    sel.classList.remove('correct');
+                }
+            });
+            ieScore = correct;
+            ieFeedback.innerHTML = correct === ieSelects.length
+                ? '<span class="success-msg">✓ All Internal/External labels correct!</span>'
+                : `<span class="error-msg">${correct} out of ${ieSelects.length} Internal/External labels correct.</span>`;
+            updateScore();
+        }
+
+        function updateScore() {
+            const total = blankScore + mcqScore + redFlagScore + ieScore + frqScore;
+            topScoreDisplay.textContent = total + ' / ' + MAX;
+        }
+
+        // ---- Event listeners ----
+        checkBlanksBtn.addEventListener('click', gradeBlanks);
+        checkMCQBtn.addEventListener('click', gradeMCQs);
+        checkRedFlagBtn.addEventListener('click', gradeRedFlags);
+        checkIEBtn.addEventListener('click', gradeIE);
+        checkFRQBtn.addEventListener('click', gradeFRQs);
+
+        // Auto-grade IE on change
+        ieSelects.forEach(sel => {
+            sel.addEventListener('change', gradeIE);
+        });
+
+        // Save button
+        saveBtn.addEventListener('click', function() {
+            saveToLocalStorage();
+            const genericKey = `ap_business_1_6_final_${studentName.value.trim() || 'anonymous'}_${studentDate.value.trim() || 'nodate'}`;
+            const data = {
+                studentName: studentName.value,
+                studentDate: studentDate.value,
+                studentPeriod: studentPeriod.value,
+                blanks: Array.from(blankInputs).map(i => i.value),
+                mcqAnswers: Array.from(mcqs).map(m => {
+                    const sel = m.querySelector('input[type="radio"]:checked');
+                    return sel ? sel.value : null;
+                }),
+                redFlagSelects: Array.from(document.querySelectorAll('.flag-select')).map(s => s.value),
+                redFlagTypes: Array.from(document.querySelectorAll('.type-select')).map(s => s.value),
+                ieSelects: Array.from(ieSelects).map(s => s.value),
+                incentiveExplanation: incentiveExplanation.value,
+                soleSwapAnswer: soleSwapAnswer.value,
+                aerialEyeA: aerialEyeA.value,
+                aerialEyeB: aerialEyeB.value,
+                aerialEyeC: aerialEyeC.value,
+                frqStakeholders: frqStakeholders.value,
+                frqTradeoff: frqTradeoff.value,
+                frqDecision: frqDecision.value,
+                businessIdea: businessIdea.value,
+                ethicsRule1: ethicsRule1.value,
+                ethicsRule2: ethicsRule2.value,
+                ethicsRule3: ethicsRule3.value,
+                ethicsWhy: ethicsWhy.value,
+                score: blankScore + mcqScore + redFlagScore + ieScore + frqScore,
+            };
+            localStorage.setItem(genericKey, JSON.stringify(data));
+            alert('Responses saved! Your score is ' + (blankScore + mcqScore + redFlagScore + ieScore + frqScore) + ' / ' + MAX + '. You can now submit this page on Teams.');
+        });
+
+        // Auto-save on input change (debounced)
+        let timeoutId;
+        function autoSave() {
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(saveToLocalStorage, 800);
+        }
+
+        document.querySelectorAll('input, textarea, select').forEach(el => {
+            el.addEventListener('input', autoSave);
+            el.addEventListener('change', autoSave);
+        });
+
+        // Load saved data on page load
+        window.addEventListener('load', function() {
+            loadFromLocalStorage();
+            // Silently re-grade standard items
+            let bCorrect = 0;
+            blankInputs.forEach(inp => {
+                if (inp.value.trim().toLowerCase() === inp.dataset.correct.toLowerCase().trim()) bCorrect++;
+            });
+            blankScore = bCorrect;
+
+            let mCorrect = 0;
+            mcqs.forEach(mcq => {
+                const selected = mcq.querySelector('input[type="radio"]:checked');
+                if (selected && selected.value === mcq.dataset.correct) mCorrect++;
+            });
+            mcqScore = mCorrect;
+
+            let rCorrect = 0;
+            redFlagRows.forEach(row => {
+                const flagSelect = row.querySelector('.flag-select');
+                if (flagSelect.value === row.dataset.correctFlag) rCorrect++;
+            });
+            redFlagScore = rCorrect;
+
+            let iCorrect = 0;
+            ieSelects.forEach(sel => {
+                const row = sel.closest('tr');
+                if (sel.value === row.dataset.correctIe) iCorrect++;
+            });
+            ieScore = iCorrect;
+
+            updateScore();
+            // Update feedback displays
+            blankFeedback.innerHTML = blankScore === blankInputs.length
+                ? '<span class="success-msg">✓ All blanks correct!</span>'
+                : `<span class="error-msg">${blankScore} out of ${blankInputs.length} blanks correct.</span>`;
+            mcqFeedback.innerHTML = mcqScore === mcqs.length
+                ? '<span class="success-msg">✓ All MCQs correct!</span>'
+                : `<span class="error-msg">${mcqScore} out of ${mcqs.length} MCQs correct.</span>`;
+            redFlagFeedback.innerHTML = redFlagScore === redFlagRows.length
+                ? '<span class="success-msg">✓ All red flag identifications correct!</span>'
+                : `<span class="error-msg">${redFlagScore} out of ${redFlagRows.length} red flag identifications correct.</span>`;
+            ieFeedback.innerHTML = ieScore === ieSelects.length
+                ? '<span class="success-msg">✓ All Internal/External labels correct!</span>'
+                : `<span class="error-msg">${ieScore} out of ${ieSelects.length} Internal/External labels correct.</span>`;
+        });
+
+        // Expose function for Teams
+        window.getEthicsData = function() {
+            return {
+                studentName: studentName.value,
+                studentDate: studentDate.value,
+                studentPeriod: studentPeriod.value,
+                blanks: Array.from(blankInputs).map(i => i.value),
+                mcqAnswers: Array.from(mcqs).map(m => {
+                    const sel = m.querySelector('input[type="radio"]:checked');
+                    return sel ? sel.value : null;
+                }),
+                redFlags: Array.from(document.querySelectorAll('.flag-select')).map(s => s.value),
+                redFlagTypes: Array.from(document.querySelectorAll('.type-select')).map(s => s.value),
+                stakeholderIE: Array.from(ieSelects).map(s => s.value),
+                incentiveExplanation: incentiveExplanation.value,
+                soleSwapAnswer: soleSwapAnswer.value,
+                aerialEyeA: aerialEyeA.value,
+                aerialEyeB: aerialEyeB.value,
+                aerialEyeC: aerialEyeC.value,
+                frqStakeholders: frqStakeholders.value,
+                frqTradeoff: frqTradeoff.value,
+                frqDecision: frqDecision.value,
+                businessIdea: businessIdea.value,
+                ethicsRules: {
+                    r1: ethicsRule1.value,
+                    r2: ethicsRule2.value,
+                    r3: ethicsRule3.value,
+                },
+                ethicsWhy: ethicsWhy.value,
+                score: blankScore + mcqScore + redFlagScore + ieScore + frqScore,
+                maxScore: MAX,
+                frqScore: frqScore,
+            };
+        };
+    })();
+</script>
+</body>
+</html>
